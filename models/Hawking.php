@@ -22,7 +22,7 @@ final class Hawking
      * @return void
      * @throws Exception
      */
-    public function bros()
+    private function bros()
     {
         $query = Yii::$app->db->createCommand("CREATE TABLE IF NOT EXISTS test (
         id INT(11) NOT NULL AUTO_INCREMENT,
@@ -62,7 +62,7 @@ final class Hawking
      * @return array|DataReader
      * @throws Exception
      */
-    private function production()
+    public function production()
     {
         return Yii::$app->db->createCommand("SELECT * FROM test WHERE result IN ('normal', 'success')")->queryAll();
     }
