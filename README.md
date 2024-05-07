@@ -1,5 +1,6 @@
-# команда выполняется из папки ./protected проекта:
-# php composer install
+команда выполняется из папки ./protected проекта:
+
+**php composer install**
 
 
 
