@@ -34,14 +34,13 @@ final class Hawking
     )");
 
         $query->execute();
-
     }
 
     /**
      * @return void
      * @throws \Exception
      */
-    public function brothers()
+    private function brothers()
     {
         $results = ['normal', 'illegal', 'failed', 'success'];
 
@@ -63,7 +62,7 @@ final class Hawking
      * @return array|DataReader
      * @throws Exception
      */
-    public function production()
+    private function production()
     {
         return Yii::$app->db->createCommand("SELECT * FROM test WHERE result IN ('normal', 'success')")->queryAll();
     }
