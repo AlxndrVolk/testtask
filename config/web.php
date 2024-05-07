@@ -47,6 +47,7 @@ $config = [
             'rules' => [
                 'POST generate' => 'generate',
                 'GET retrieve/<id:\d+>' => 'retrieve',
+                'index' => '/hawking/index'
             ],
         ],
     ],
